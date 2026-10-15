@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact nous</title>
+    <link rel="stylesheet" href="razer.css/contact.css">
+</head>
+<body>
+<header>
+    <a href="razer/menu.html" class="logo">Razer</a>
+    <nav class="navigation">
+         <a href="clavier.html">Clavier</a>
+            <a href="souris.html">Souris</a>
+            <a href="casque.html">Audio</a>
+            <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="main reveal">
+    </div>
+</section>
+    <section class="contact">
+    <div class="contactez ">
+        <form>
+           
+                
+            <h1 align="center" style="color: green;">Contactez nous</h1><br>
+            <p align="center" style="color: green;">Nous sommes très heureux de vous<br> accompanger et de répondre à toutes<br> vos questions!</p><br>
+        
+        <div class="form"  >  <input type="text" placeholder="Nom complete" ><br>
+            <input type="email" placeholder="Email"><br>
+          <textarea placeholder="message" name="" id=""></textarea><br>
+            <input type="submit" class="envoi" value="Envoi"><br>
+           </div>
+        </form>
+    </div>
+    <div class="localisation">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3607848.990632974!2d76.44277319547876!3d27.985021707628597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sboutique%20%C3%A0%20proximit%C3%A9%20de%20Laither%2C%20Uttar%20Pradesh%2C%20Inde!5e0!3m2!1sfr!2sma!4v1765125922326!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    </section>
+    
+    
+
+        
+        
+    </section>
+    <div class="footer">
+         <div class="icones" >
+                <a href="https://twitter.com › Razer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com › razer"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com › Razer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.razer.com › fr-fr › stickers"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/c/razer/videos"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+           
+            <hr style="color: green;">
+            <table class="mytable">
+                <tr style="color: aliceblue;" >
+              
+                <th width="300px"  >COMMUNAUTÉ MSI</th>
+                <th  width="300px"  >SUPPORT</th>
+                  <th  width="300px"  >NOUVEAUTÉS</th>
+                  <th  width="300px"  >À PROPOS DE MSI</th>
+                  <th  width="300px" >MÉDIAS</th>
+                </tr>
+                <br><br><br>
+                <tr style="color: aliceblue;" align="center" >
+                    <td width="300px">Programme </td>
+                    <td width="300px">Téléchargements</td>
+                      <td width="300px">Programme </td>
+                    <td width="300px">Téléchargements</td>
+                      <td width="300px">Programme </td>
+                    
+                </tr>
+                <tr style="color: white;" align="center">
+                    <td>Forums</td>
+                    <td>Enregistrement </td>
+                    <td>Récompenses</td>
+                    <td>Récompenses</td>
+                    <td>Brochures</td>
+                
+                </tr>
+                <tr style="color: white;" align="center">
+                    <td>Réseaux sociaux</td>
+                    <td>Service clients </td>
+                    <td>RSS</td>
+                    <td>Innovations</td>
+                    <td>Fonds d'écran</td>
+                </tr>
+                 <tr style="color: white;" align="center">
+                    <td>Teams gaming</td>
+                    <td>Garantie</td>
+                    <td>Razer</td>
+                    <td>Centre de services</td>
+                    <td>Applis Razer</td>
+                 </tr>
+                 <tr style="color: white;" align="center">
+                    <td>Blog</td>
+                 </tr>
+                  <tr style="color: white;" align="center">
+                    <td>Témoignages</td>
+                 </tr>
+            
+            </table>
+             <br>
+                 <br>
+                 <hr>
+                 <br>
+                 <pre>
+ 
+   <i>copyright © 2025 Razer Inc. Tous droits réservés / Plan du site /   Conditions générales politique de confidentialité / Paramètres des cookies États-Unis  |  Changer de lieu</i>
+
+                 </pre>
+
+
+    </div>
+<script>
+const reveals = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = index * 0.15 + "s";
+            entry.target.classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+reveals.forEach(el => observer.observe(el));
+</script>
+       
+</body>
+</html>

@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-container {
+  width: 95%;
+  max-width: 1200px;
+  min-height: 85vh;
+  background: #0b0b0b;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 35px #00ff0055;
+}
+
+.checkout-form {
+  display: flex;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+}
+
+h2 {
+  color: #00ff00;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+label {
+  color: #ccc;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0 18px;
+  background: #111;
+  border: 1px solid #00ff00;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.cards {
+  margin-bottom: 20px;
+}
+
+.cards img {
+  width: 45px;
+  margin-right: 10px;
+}
+.confirm-btn {
+  width: 100%;
+  padding: 18px;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #00ff00, #00cc00);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px #00ff0066;
+}
+
+.confirm-btn:hover {
+  background: #00ff00;
+  box-shadow: 0 0 30px #00ff00;
+  transform: scale(1.02);
+}
+
+.confirm-btn:active {
+  transform: scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+  .checkout-form {
+    flex-direction: column;
+  }
+
+  .checkout-container {
+    padding: 25px;
+  }
+}
+
+.checkout-container {
+  opacity: 0;
+  transform: translateY(60px) scale(0.98);
+  animation: pageIn 0.9s ease forwards;
+}
+
+@keyframes pageIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.column {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: columnIn 0.8s ease forwards;
+}
+
+.column:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.column:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+@keyframes columnIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input {
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #00ff00;
+}
+
+.confirm-btn {
+  transition: all 0.3s ease;
+}
+
+.confirm-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.cards img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.cards img:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 0 8px #00ff00);
+}
+
+.cards img.active {
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 15px #00ff00);
+}

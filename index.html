@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acuueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="razer.css/index.css">
+</head>
+<body>
+
+<header>
+    <a href="../razer/menu.html" class="logo">Razer</a>
+    <nav class="navigation">
+            <a href="clavier.html">Clavier</a>
+            <a href="souris.html">Souris</a>
+            <a href="casque.html">Audio</a>
+            <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="main reveal" >
+    <div>
+        <h1>Souris Gaming <br><span>Razer Brand </span></h1>
+        <p>La souris Razer offre précision, rapidité, confort et design<br> ergonomique pour une expérience gaming optimale.</p>
+        <a href="#produits-razer" class="click">Produits razer</a>
+        <div class="icone">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</section>
+
+<h1 class="main-title reveal" style="background-color: black;">Produits Razer</h1>
+
+<section class="products" id="produits-razer">
+
+    <div class="product reveal-left">
+        <br><br>
+        <img src="razer.css/element/rgb-gaming-keyboard-isolated-transparent-background_1028938-531144-removebg-preview.png" width="240px">
+        <br><br><br>
+        <h1>Clavier Razer</h1>
+        <br><br>
+        <a href="../razer/clavier.html">tout afficher</a>
+    </div>
+
+    <div class="product reveal">
+        <img class="iimg" src="https://assets3.razerzone.com/IGLejpy9uJjP2M8FsPZTU6rZ-Jg=/300x300/https%3A%2F%2Fmedias-p1.phoenix.razer.com%2Fsys-master-phoenix-images-container%2Fh5a%2Fh1c%2F9821720576030%2Fbasilisk-v3-pro-35k-500x500.png">
+        <h2>Souris Razer</h2>
+        <br><br>
+        <a href="../razer/souris.html">tout afficher</a>
+    </div>
+
+    <div class="product reveal-right">
+        <br><br><br>
+        <img src="razer.css/element/razer-kraken-chroma-7-1-test.png" width="260px">
+        <br>
+        <h3>Casque Razer</h3>
+        <br><br>
+        <a href="../razer/casque.html">tout afficher</a>
+    </div>
+
+</section>
+
+<div class="razer reveal">
+    <img class="razer" src="https://maytinhbaoloc.vn/wp-content/uploads/2024/06/Tong-hop-gaming-gear.jpg">
+</div>
+
+<div class="footer reveal" >
+    <div class="icones" align="center">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <hr style="color: green;">
+
+    <table class="mytable">
+        <tr style="color: aliceblue;">
+            <th width="300px">COMMUNAUTÉ MSI</th>
+            <th width="300px">SUPPORT</th>
+            <th width="300px">NOUVEAUTÉS</th>
+            <th width="300px">À PROPOS DE MSI</th>
+            <th width="300px">MÉDIAS</th>
+        </tr>
+
+        <tr style="color: aliceblue;" align="center">
+            <td>Programme</td>
+            <td>Téléchargements</td>
+            <td>Programme</td>
+            <td>Téléchargements</td>
+            <td>Programme</td>
+        </tr>
+
+        <tr style="color: white;" align="center">
+            <td>Forums</td>
+            <td>Enregistrement</td>
+            <td>Récompenses</td>
+            <td>Récompenses</td>
+            <td>Brochures</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <pre>
+   <i>copyright © 2025 Razer Inc. Tous droits réservés</i>
+    </pre>
+</div>
+
+<!-- JS ANIMATION -->
+<script>
+const reveals = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = index * 0.15 + "s";
+            entry.target.classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
+
